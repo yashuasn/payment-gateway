@@ -1,0 +1,71 @@
+{
+  "name": "pg-test-project",
+  "version": "3.0.4",
+  "description": "A payment gateway for sab paisa",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build": "rollup -c",
+    "prepublishOnly": "yarn build"
+  },
+  "np": {
+    "publish": false,
+    "tests": false
+  },
+  "keywords": [
+    "stroybook",
+    "react",
+    "typescript"
+  ],
+  "author": "Akshay Sharma",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "@storybook/addon-actions": "^6.1.9",
+    "@storybook/addon-essentials": "^6.1.9",
+    "@storybook/addon-links": "^6.1.9",
+    "@storybook/react": "^6.1.9",
+    "@types/react": "^17.0.0",
+    "babel-loader": "^8.2.2",
+    "postcss": "^8.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.34.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "typescript": "^4.1.2"
+  },
+  "peerDependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  },
+  "dependencies": {
+    "@types/crypto-js": "^4.1.1",
+    "axios": "^0.27.2",
+    "base-64": "^1.0.0",
+    "bootstrap": "^5.2.0",
+    "crypto-js": "^4.1.1",
+    "react-credit-card-input": "^1.1.5",
+    "react-hook-form": "^7.34.2",
+    "react-lottie-player": "^1.4.3",
+    "react-select": "^5.4.0",
+    "reactstrap": "^9.1.4",
+    "resolve-url-loader": "^5.0.0",
+    "rollup-plugin-images": "^1.0.0",
+    "stream": "0.0.2",
+    "timers": "^0.1.1",
+    "utf8": "^3.0.0"
+  },
+  "browser": {
+    "http": false,
+    "https": false
+  }
+}
